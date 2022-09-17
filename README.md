@@ -3,12 +3,10 @@
 ## Lógica de negocio. Problemas planteados.
 ---
 
-Cliente: Comercio de venta al por menor.
+Clientes: Empresas de software.
 
-Suelen tener problemas a la hora de evaluar si un producto está siendo rentable, ya que los precios de los proveedores fluctúan.  El producto ha dejado de ser rentable por dos motivos: están obteniendo un porcentaje de beneficio menor al introducido para ese producto si fijan un precio máximo de venta al público o el precio de venta al público es demasiado alto si no fijan el precio máximo.
+Las empresas de software necesitan una plataforma cloud, donde poder probar de manera automática combinaciones de opciones de optimización de GCC elegido por ellos, de los programas que necesitan desplegar en sus sistemas informáticos, también para obtener una estadística de que combinación de flags de optimización les da un mejor rendimiento o peso total del binario. También obtien la media de todas las combinaciones y podrán compararla visualmente. Así como también obtener información en qué punto del programa se esta consumiendo más tiempo de CPU, poder compararlo con los otros flags de optimización si ese punto se comporta mejor o peor y obtener el tiempo medio consumido en ese punto.
 
-Quieren tener un sistema que ayude a visualizar la rentabilidad del producto, qué ingresos netos (beneficios) van a tener si venden todo el producto disponible en stock y predecir cuanto tiempo van a tardarlo en venderlo todo dado una cantidad introducida por el cliente. También quieren poder comparar si con otras empresas proveedora que tenga menores o mayores precios de venta de fábrica y por lo tanto con un menor o mayor precio de venta al cliente los productos sale más rentable con la misma predicción de mayor o menor n de productos vendidos en el mismo periodo.
-
-Sería cloud por ser un sistema disponible por cualquier empresa minorista de visualización gráfica, procesamiento de precios unitarios máximos, margen de beneficios, tiempo estimado para vender totalmente el stock y obtención del total de los beneficios netos.
+Esta información resultante les da un informe con el cual obtienen información valiosa, que les permite mejorar la aplicación y elegir que parámetros van a elegir para compilar el programa.
 
 ---
