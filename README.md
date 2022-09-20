@@ -13,7 +13,7 @@ La empresa o en su defecto el encargado, no tiene información directa del estad
 
 La nube es necesaria para tener un punto de reunión de datos que son vitales para la empresa como son, estados de los invernaderos recolectados con sensores de medición, los recursos utilizados por invernadero registrados por el encargado y cosecha obtenida por invernadero. Todo ello se puede procesar en la nube,obteniendo resúmenes estadísticos generados con la última subida de datos, como la media de los estados de los invernaderos, media de recursos utilizados y la media de la cosecha obtenida, así como la desviación típica de esos datos o otros datos estadísticos, que permitan ajustar parámetros para que puedan obtener una mejor cosecha. También en los resúmenes se puede poner filtros de ordenar la información relevante para el encargado del invernadero, pudiendo obtener el estado del invernadero en el que está a cargo en todo momento.
 
-Además, en la nube también se puede preparar otros parámetros que la empresa o otras empresas del mismo sector crean necesarios que se recolecte, como la radiación UV, precipitación de lluvia,... 
+Además, en la nube también se puede preparar otros parámetros que la empresa o otras empresas del mismo sector crean necesarios que se recolecte y procese. Como la radiación UV, precipitación de lluvia,... 
 
 ### Lógica de negocio del producto.
 
