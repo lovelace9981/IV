@@ -28,11 +28,11 @@ Suposiciones, el paquete ya se ha escaneado por otros medios y se encuentra regi
 
 ### Estado del proyecto
 
-*[X] Objetivo 0 
+* [X] Objetivo 0 
 
 Se ha definido ya el proyecto y la lógica de negocio.
 
-*[X] Objetivo 1
+* [X] Objetivo 1
 
 Se ha definido las user histories y los milestone MVP.
 
