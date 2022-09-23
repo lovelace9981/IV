@@ -36,7 +36,7 @@ Método que dada la información ingresada en la API en el milestone 2 de los tr
 
 ### [M5] API de obtención de datos de productos pendientes del trabajador.
 
-API que partiendo de la estructura de departamentos de los trabajadores generada en el milestone 3, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un trabajador que se le indique.
+API que partiendo de la estructura de departamentos de los trabajadores generada en el milestone 4, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un trabajador que se le indique.
 
 ---
 
