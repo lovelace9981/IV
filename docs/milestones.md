@@ -6,7 +6,13 @@ El módulo genera una estructura de datos, que define como clave el departamento
 
 ---
 
-### [M2] API de ingestión de datos que obtenga de los depósitos de datos que haya disponibles, los productos pendientes de revisión.
+### [M2] Módulo de preprocesamiento de los datos de los técnicos y generador de la estructura de datos de estos.
+
+Módulo que prepare la estructura de datos que clasifique a los técnicos por su departamento. Tiene como clave el departamento, para hacer más eficiente el trabajo del balanceador. Se define una lista de técnicos. Luego por cada técnico se define una cola de productos pendientes única.
+
+---
+
+### [M3] API de ingestión de datos que obtenga de los depósitos de datos que haya disponibles, los productos pendientes de revisión.
 
 Se define una API que permita recibir datos desde los depósitos de datos del almacen, la información de los productos pendientes de revisión. Almacenándose temporalmente en un depósito de datos propio intermedio definido en el M1. La API de ingestión solo acepta los siguientes datos:
 
@@ -15,15 +21,9 @@ Tag de departamento adecuado para su revisión.
 
 ---
 
-### [M3] Módulo de preprocesamiento de los datos de los técnicos y generador de la estructura de datos de estos.
-
-Módulo que prepare la estructura de datos que clasifique a los técnicos por su departamento. Tiene como clave el departamento, para hacer más eficiente el trabajo del balanceador. Se define una lista de técnicos. Luego por cada técnico se define una cola de productos pendientes única.
-
----
-
 ### [M4] API de ingestión de los técnicos en activo.
 
-Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los técnicos en activo para revisión y se almacena la información resultante en las estructuras de datos definidas en el M3. En concreto la estructura de datos definida es como sigue:
+Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los técnicos en activo para revisión y se almacena la información resultante en las estructuras de datos definidas en el M2. En concreto la estructura de datos definida es como sigue:
 
 Identificador de técnico
 Departamento
