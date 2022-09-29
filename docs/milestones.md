@@ -25,25 +25,25 @@ Departamento
 
 ---
 
-### [M5] Módulo de preprocesamiento de los datos de los trabajadores y generador de la estructura de datos de estos.
+### [M4] Módulo de preprocesamiento de los datos de los trabajadores y generador de la estructura de datos de estos.
 
 Método que dada la información ingresada en la API en el milestone 3 de los trabajadores, permita clasificar a los trabajadores en una super-estructura de datos clasificada por departamento, para hacer más eficiente el trabajo del balanceador. En concreto se define una lista de trabajadores del departamento y a los trabajadores se le asocia una cola de productos pendientes.
 
 ---
 
-### [M6] Módulo de balanceo de carga.
+### [M5] Módulo de balanceo de carga.
 
 Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos introducidas y generadas por los métodos y APIs de los milestone sucesivos. Realice las asignaciones de productos a revisar, al trabajador del deparamento adecuado y que el trabajador sea el que menor número de productos pendientes tenga. Todo ello alterando la estructura de datos que hay generada de Departamento-Empleado y la de productos pendientes.
 
 ---
 
-### [M7] API de obtención de datos de productos pendientes del trabajador.
+### [M6] API de obtención de datos de productos pendientes del trabajador.
 
 API que partiendo de la estructura de departamentos de los trabajadores generada en el milestone 4, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un trabajador que se le indique.
 
 ---
 
-### [M8] API que permite la obtención del listado de tareas pendientes de todo un departamento.
+### [M7] API que permite la obtención del listado de tareas pendientes de todo un departamento.
 
 Método que permite a partir de los datos del milestone 4, muestre la información de tareas pendientes de todo un departamento filtrada y ordenada en, Trabajador - Producto pendiente de revisión, generada en un formato universal.
 
