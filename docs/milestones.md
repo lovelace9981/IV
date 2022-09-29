@@ -9,43 +9,42 @@ Tag de departamento adecuado para su revisión.
 
 ### [M2] Módulo preprocesamiento de los datos de los productos pendientes de revisión y generador de la estructura de datos de estos.
 
-A partir del milestone anterior como entrada de datos, se define un módulo que tiene como objetivo preparar las estructuras de datos necesarias para que el balanceo de carga realice asignaciones de revisión a los técnicos del departamento objetivo. 
+A partir del M1 deposito de datos, se define un módulo que tiene como objetivo preparar las estructuras de datos necesarias para que el balanceo de carga realice asignaciones de revisión a los técnicos del departamento objetivo. 
 
 El módulo genera una estructura de datos, que define como clave el departamento y una cola de productos pendientes de revisión.
 
 ---
 
-### [M3] API de ingestión de los trabajadores en activo para el balanceo de carga.
+### [M3] API de ingestión de los técnicos en activo para el balanceo de carga.
 
-Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los trabajadores en activo para revisión. S
-En concreto la estructura de datos definida es como sigue:
+Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los técnicos en activo para revisión. En concreto la estructura de datos definida es como sigue:
 
-Identificador de trabajador
+Identificador de técnico
 Departamento
 
 ---
 
-### [M4] Módulo de preprocesamiento de los datos de los trabajadores y generador de la estructura de datos de estos.
+### [M4] Módulo de preprocesamiento de los datos de los técnicos y generador de la estructura de datos de estos.
 
-Método que dada la información ingresada en la API en el milestone 3 de los trabajadores, permita clasificar a los trabajadores en una super-estructura de datos clasificada por departamento, para hacer más eficiente el trabajo del balanceador. En concreto se define una lista de trabajadores del departamento y a los trabajadores se le asocia una cola de productos pendientes.
+Módulo que dada la información ingresada en la API en el M3 de los técnicos, clasifique a los técnicos en una super-estructura de datos que tiene como clave el departamento, para hacer más eficiente el trabajo del balanceador. La lista de técnicos se asocia a la clave del departamento y se define una cola de productos pendientes única por técnico.
 
 ---
 
 ### [M5] Módulo de balanceo de carga.
 
-Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos introducidas y generadas por los métodos y APIs de los milestone anteriores. Realice las asignaciones de productos a revisar, al trabajador del departamento adecuado y que el trabajador sea el que menor número de productos pendientes tenga. Todo ello alterando la estructura de datos que hay generada de Departamento-Empleado y la de productos pendientes. Añadiendo el producto a la cola del trabajador y quitándola de la cola del departamento.
+Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos introducidas y generadas por los métodos y APIs de los milestone anteriores. Realice las asignaciones de productos a revisar, al téncico del departamento adecuado y que el técnico sea el que menor número de productos pendientes tenga. Todo ello alterando la estructura de datos que hay generada de Departamento-Empleado y la de productos pendientes. Añadiendo el producto a la cola del técnico y quitándola de la cola del departamento.
 
 ---
 
-### [M6] API de obtención de datos de productos pendientes del trabajador.
+### [M6] API de obtención de productos pendientes de revisión del técnico.
 
-API que partiendo de la estructura de departamentos de los trabajadores generada en el milestone 4, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un trabajador que se le indique.
+API que partiendo de la estructura de departamentos de los técnicos generada en el M5, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un técnico indicado.
 
 ---
 
-### [M7] API que permite la obtención del listado de tareas pendientes de todo un departamento.
+### [M7] API de obtención del listado de revisiones pendientes de todo un departamento.
 
-Método que permite a partir de los datos del milestone 4, muestre la información de tareas pendientes de todo un departamento filtrada y ordenada en, Trabajador - Producto pendiente de revisión, generada en un formato universal.
+API que partiendo de la misma estructura del M6, muestre la información de tareas pendientes de todo un departamento filtrada y ordenada en, Técnico - Producto pendiente de revisión, generada en un formato universal.
 
 ---
 
