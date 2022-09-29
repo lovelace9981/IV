@@ -33,7 +33,7 @@ Método que dada la información ingresada en la API en el milestone 3 de los tr
 
 ### [M5] Módulo de balanceo de carga.
 
-Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos introducidas y generadas por los métodos y APIs de los milestone sucesivos. Realice las asignaciones de productos a revisar, al trabajador del deparamento adecuado y que el trabajador sea el que menor número de productos pendientes tenga. Todo ello alterando la estructura de datos que hay generada de Departamento-Empleado y la de productos pendientes.
+Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos introducidas y generadas por los métodos y APIs de los milestone anteriores. Realice las asignaciones de productos a revisar, al trabajador del departamento adecuado y que el trabajador sea el que menor número de productos pendientes tenga. Todo ello alterando la estructura de datos que hay generada de Departamento-Empleado y la de productos pendientes. Añadiendo el producto a la cola del trabajador y quitándola de la cola del departamento.
 
 ---
 
