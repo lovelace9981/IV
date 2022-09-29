@@ -15,7 +15,7 @@ El módulo genera una estructura de datos, que define como clave el departamento
 
 ---
 
-### [M3] API de ingestión de los técnicos en activo para el balanceo de carga.
+### [M3] API de ingestión de los técnicos en activo.
 
 Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los técnicos en activo para revisión. En concreto la estructura de datos definida es como sigue:
 
