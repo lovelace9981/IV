@@ -9,7 +9,7 @@ Tag de departamento adecuado para su revisión.
 
 ### [M2] Módulo preprocesamiento de los datos de los productos pendientes de revisión y generador de la estructura de datos de estos.
 
-A partir del M1 deposito de datos, se define un módulo que tiene como objetivo preparar las estructuras de datos necesarias para que el balanceo de carga realice asignaciones de revisión a los técnicos del departamento objetivo. 
+A partir del M1 como deposito de datos, se define un módulo que tiene como objetivo preparar las estructuras de datos necesarias para que el balanceo de carga realice asignaciones de revisión a los técnicos del departamento objetivo. 
 
 El módulo genera una estructura de datos, que define como clave el departamento y una cola de productos pendientes de revisión.
 
