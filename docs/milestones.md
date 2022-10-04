@@ -1,52 +1,29 @@
-### [M1] Módulo preprocesamiento de los datos de los productos pendientes de revisión y generador de la estructura de datos de estos.
+### [M1] Generación de las estructuras de datos para la lógica de negocio.
+Las estructuras de datos que debe tener la información siguiente para poder realizar la lógica de negocio:
 
-Sedefine un módulo que tiene como objetivo preparar las estructuras de datos necesarias para que el balanceo de carga realice asignaciones de revisión a los técnicos del departamento objetivo. 
+1. Estructura de datos Técnico:
+* Identificador del departamento de revisión al que pertenece.
+* Información de la carga actual, inicialmente ninguna.
 
-El módulo genera una estructura de datos, que define como clave el departamento y una cola de productos pendientes de revisión.
+2. Estructura de datos Departamento:
+* Identificador del departamento. 
+* Subesctructura contenedora de los técnicos.
 
----
-
-### [M2] Módulo de preprocesamiento de los datos de los técnicos y generador de la estructura de datos de estos.
-
-Módulo que prepare la estructura de datos que clasifique a los técnicos por su departamento. Tiene como clave el departamento, para hacer más eficiente el trabajo del balanceador. Se define una lista de técnicos. Luego por cada técnico se define una cola de productos pendientes única.
-
----
-
-### [M3] API de ingestión de datos que obtenga de los depósitos de datos que haya disponibles, los productos pendientes de revisión.
-
-Se define una API que permita recibir datos desde los depósitos de datos del almacen, la información de los productos pendientes de revisión. Almacenándose temporalmente en un depósito de datos propio intermedio definido en el M1. La API de ingestión solo acepta los siguientes datos:
-
-Identificador del producto devuelto.
-Tag de departamento adecuado para su revisión.
+3. Estructura de datos Productos pendientes de revisión
+* Información del departamento de revisión objetivo.
+* Identificador del producto. 
 
 ---
 
-### [M4] API de ingestión de los técnicos en activo.
+### [M2] Lógica de negocio
 
-Se define una API que permita recibir desde los depósitos de datos del almacen, la información de los técnicos en activo para revisión y se almacena la información resultante en las estructuras de datos definidas en el M2. En concreto la estructura de datos definida es como sigue:
-
-Identificador de técnico
-Departamento
+Aquí aplicamos la lógica de negocio que es asignar los productos pendientes de revisión a los empleados con menor carga de trabajo. Toda la lógica se realiza a partir de las estructuras definidas en el milestone previo.
 
 ---
 
-### [M5] Módulo de balanceo de carga.
+### [M3] Obtención de las tareas asignadas al empleado
 
-Se define el módulo de balanceo de carga como clase, que dada las estructuras de datos generadas mediante los módulos y los datos introducidos mediante las APIs de los milestone anteriores. Realice las asignaciones de productos a revisar, al téncico del departamento adecuado y que el técnico sea el que menor número de productos pendientes tenga. Todo ello alterando las estructuras de datos que hay generadas de Departamento-Empleado y la de productos pendientes. Añadiendo el producto a la cola del técnico y quitándola de la cola del departamento.
-
----
-
-### [M6] API de obtención de productos pendientes de revisión del técnico.
-
-API que partiendo de la estructura de departamentos de los técnicos generada en el M5, obtiene los datos y genera en un formato universal, los productos pendientes por revisar de un técnico indicado.
-
----
-
-### [M7] API de obtención del listado de revisiones pendientes de todo un departamento.
-
-API que partiendo de la misma estructura del M6, muestre la información de tareas pendientes de todo un departamento filtrada y ordenada en, Técnico - Producto pendiente de revisión, generada en un formato universal.
-
----
+A partir del milestone anterior de la lógica de negocio, a partir de un identificador de empleado, se obtiene las tareas asignadas por la l
 
 ### Milestones en GitHub: 
 
