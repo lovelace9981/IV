@@ -1,11 +1,13 @@
-### [M1] Generación de las estructuras de datos para la lógica de negocio.
-Las estructuras de datos que debe tener la información siguiente para poder realizar la lógica de negocio:
+### [M1] Estructuras de datos para la lógica de negocio.
+
+Las estructuras de datos que deben contener la información necesaria para poder realizar la lógica de negocio:
 
 1. Estructura de datos Técnico:
 * Identificador del departamento de revisión al que pertenece.
 * Información de la carga actual, inicialmente ninguna.
+* Cola de Productos Pendientes de revisión.
 
-2. Estructura de datos Departamento:
+2. Estructura de datos Departamentos:
 * Identificador del departamento. 
 * Subesctructura contenedora de los técnicos.
 
@@ -17,13 +19,15 @@ Las estructuras de datos que debe tener la información siguiente para poder rea
 
 ### [M2] Lógica de negocio
 
-Aquí aplicamos la lógica de negocio que es asignar los productos pendientes de revisión a los empleados con menor carga de trabajo. Toda la lógica se realiza a partir de las estructuras definidas en el milestone previo.
+A partir de las estructuras de datos anteriores, se procede a la búsqueda y asignación del primer producto pendiente, al Técnico del departamento relacionado con el producto, con menor carga de trabajo disponible.
 
 ---
 
-### [M3] Obtención de las tareas asignadas al empleado
+### [M3] Obtención de las tareas asignadas al empleado mediante una API.
 
-A partir del milestone anterior de la lógica de negocio, a partir de un identificador de empleado, se obtiene las tareas asignadas por la l
+A partir del milestone anterior de la lógica de negocio, se expone una API que según el identificador pasado como parámetro se devuelve la carga asignada al trabajador.
+
+---
 
 ### Milestones en GitHub: 
 
