@@ -1,6 +1,6 @@
-### [M1] Creación de las estructuras de datos para la lógica de negocio.
+### [M1] Módulo de definición de las estructuras de datos que contengan la información para la lógica de negocio.
 
-Las estructuras de datos internas que deben contener la información de los paquetes entrantes a revisar, departamentos de revisión y sus empleados. 
+El módulo debe definir las estructuras de datos internas que deben contener la información de los paquetes a revisar, departamentos y empleados de revisión.
 
 ---
 
