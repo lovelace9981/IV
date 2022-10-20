@@ -1,6 +1,4 @@
-### [M1] Módulo de definición de las estructuras de datos que contengan la información para la lógica de negocio.
-
-El módulo debe definir las estructuras de datos internas que deben contener la información de los paquetes a revisar, departamentos y empleados de revisión.
+### [M1] Módulo de definición de las estructuras de datos que contengan la información para la lógica de negocio de balanceo de carga.
 
 ---
 
