@@ -26,4 +26,14 @@ Relación de producto con especialidad del técnico.
 
 Suposiciones, el paquete ya se ha escaneado por otros medios y se encuentra registrado en una cola de espera general.
 
+### Estado del proyecto
+
+* [X] Objetivo 0 
+
+Se ha definido ya el proyecto y la lógica de negocio.
+
+* [X] Objetivo 1
+
+Se ha definido las user histories y los milestone MVP.
+
 ---
